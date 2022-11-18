@@ -1,3 +1,4 @@
+import datetime
 from random import randint, choice
 
 
@@ -45,13 +46,17 @@ class Doctor(Human):
 
 
 class Nurse(Human):
+    sign_up_date = None
 
     def __init__(self, name, surname, dni, floor):
         Human.__init__(self, name, surname, dni)
         self.floor = floor
 
     def sign_up(self):
-        print("el enfermer@ {} ha fichado su entrada".format(self.name))
+        self.sign_up_date = datetime.datetime.now()
+        print("el enfermer@ {} ha fichado su entrada a las {}".format(self.name,
+                                                                      self.sign_up_date.strftime("%m/%d/%Y, %H:%M:%S")))
+
 
     def care(self, patient, room):
         room.patient = patient
