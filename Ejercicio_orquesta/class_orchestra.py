@@ -1,9 +1,9 @@
 from abc import ABC
 from random import randint
 
-from Ejercicio_orquesta.decorator import orchestra_decorator
-from Ejercicio_orquesta.orchestra_exceptions import TuneException
-from Ejercicio_orquesta.utils import utils_tuned
+from decorator import orchestra_decorator
+from orchestra_exceptions import TuneException
+from utils import utils_tuned
 from logging_general import log
 
 
@@ -33,7 +33,7 @@ class Orchestra:
         for tuned_instrument in self.orchestra_list:
             try:
                 if tuned_instrument.kind == "percusion":
-                    tuned_instrument.hammer()
+                    tuned_instrument.hammer(tuned_instrument.name)
                 else:
                     tuned_instrument.play()
             except TuneException as e:
@@ -66,7 +66,7 @@ class Guitar(Instrument):
 
     @orchestra_decorator
     def tune(self):
-        if randint(1, 10) >= 1:
+        if randint(1, 10) >= 5:
             self.tuned = True
             log.info("el instrumento {} se ha afinado correctamente".format(self.name))
 
@@ -83,7 +83,7 @@ class ElectricGuitar(Guitar):
 
     @orchestra_decorator
     def tune(self):
-        if randint(1, 10) >= 1:
+        if randint(1, 10) >= 5:
             self.tuned = True
             log.info("el instrumento {} se ha afinado correctamente".format(self.name))
 
@@ -100,7 +100,7 @@ class Piano(Instrument):
 
     @orchestra_decorator
     def tune(self):
-        if randint(1, 10) >= 1:
+        if randint(1, 10) >= 5:
             self.tuned = True
             log.info("el instrumento {} se ha afinado correctamente".format(self.name))
 
@@ -117,10 +117,13 @@ class Drum(Instrument):
 
     @orchestra_decorator
     def tune(self):
-        if randint(1, 10) >= 1:
+        if randint(1, 10) >= 5:
             self.tuned = True
             log.info("el instrumento {} se ha afinado correctamente".format(self.name))
 
     @orchestra_decorator
     def hammer(self, name):
-        print("Se esta tocando el tambor {}".format(name))
+        if self.tuned:
+            print("Se esta tocando el tambor {}".format(name))
+        else:
+            raise TuneException('El instrumento {} no esta afinado'.format(self.name))

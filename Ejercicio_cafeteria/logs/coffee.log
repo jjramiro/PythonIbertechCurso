@@ -8,3 +8,94 @@
 08:49:15 AM: ERROR [bar.py:11] el cafe esta demasiado frio
 08:49:25 AM: INFO [clases_bar.py:38] el cliente se ha ido muy feliz!
 08:49:50 AM: ERROR [bar.py:11] el cafe esta demasiado frio
+06:54:24 PM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+06:54:24 PM: INFO [class_orchestra.py:23] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+06:54:24 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:54:24 PM: INFO [class_orchestra.py:71] el instrumento guitarra se ha afinado correctamente
+06:54:24 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:54:24 PM: INFO [class_orchestra.py:88] el instrumento guitarra electrica se ha afinado correctamente
+06:54:24 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:54:24 PM: INFO [class_orchestra.py:105] el instrumento piano se ha afinado correctamente
+06:54:24 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:54:24 PM: INFO [class_orchestra.py:122] el instrumento bateria se ha afinado correctamente
+06:54:24 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:54:24 PM: INFO [utils.py:9] el instrumento guitarra se esta tocando correctamente
+06:54:24 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:54:24 PM: INFO [utils.py:9] el instrumento guitarra electrica se esta tocando correctamente
+06:54:24 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:54:24 PM: INFO [utils.py:9] el instrumento piano se esta tocando correctamente
+06:55:28 PM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+06:55:28 PM: INFO [class_orchestra.py:23] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+06:55:28 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:55:28 PM: INFO [class_orchestra.py:71] el instrumento guitarra se ha afinado correctamente
+06:55:28 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:55:28 PM: INFO [class_orchestra.py:88] el instrumento guitarra electrica se ha afinado correctamente
+06:55:28 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:55:28 PM: INFO [class_orchestra.py:105] el instrumento piano se ha afinado correctamente
+06:55:28 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:55:28 PM: INFO [class_orchestra.py:122] el instrumento bateria se ha afinado correctamente
+06:55:28 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:55:28 PM: INFO [utils.py:9] el instrumento guitarra se esta tocando correctamente
+06:55:28 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:55:28 PM: INFO [utils.py:9] el instrumento guitarra electrica se esta tocando correctamente
+06:55:28 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:55:28 PM: INFO [utils.py:9] el instrumento piano se esta tocando correctamente
+06:57:00 PM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+06:57:00 PM: INFO [class_orchestra.py:24] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+06:57:00 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:57:00 PM: INFO [class_orchestra.py:88] el instrumento guitarra electrica se ha afinado correctamente
+06:57:00 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:57:00 PM: INFO [class_orchestra.py:105] el instrumento piano se ha afinado correctamente
+06:57:00 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:57:00 PM: INFO [class_orchestra.py:122] el instrumento bateria se ha afinado correctamente
+06:57:00 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:57:00 PM: ERROR [class_orchestra.py:40] el instrumento guitarra no esta afinado
+06:57:00 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:57:00 PM: INFO [utils.py:9] el instrumento guitarra electrica se esta tocando correctamente
+06:57:00 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:57:00 PM: INFO [utils.py:9] el instrumento piano se esta tocando correctamente
+06:58:05 PM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+06:58:05 PM: INFO [class_orchestra.py:24] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+06:58:05 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:58:05 PM: INFO [class_orchestra.py:71] el instrumento guitarra se ha afinado correctamente
+06:58:05 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:58:05 PM: INFO [class_orchestra.py:105] el instrumento piano se ha afinado correctamente
+06:58:05 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:58:05 PM: INFO [class_orchestra.py:122] el instrumento bateria se ha afinado correctamente
+06:58:05 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:58:05 PM: INFO [utils.py:9] el instrumento guitarra se esta tocando correctamente
+06:58:05 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:58:05 PM: ERROR [class_orchestra.py:40] el instrumento guitarra electrica no esta afinado
+06:58:05 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:58:05 PM: INFO [utils.py:9] el instrumento piano se esta tocando correctamente
+06:59:50 PM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+06:59:50 PM: INFO [class_orchestra.py:24] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+06:59:50 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:59:50 PM: INFO [class_orchestra.py:71] el instrumento guitarra se ha afinado correctamente
+06:59:50 PM: INFO [class_orchestra.py:57] metodo setter activado
+06:59:50 PM: INFO [class_orchestra.py:88] el instrumento guitarra electrica se ha afinado correctamente
+06:59:50 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:59:50 PM: INFO [utils.py:9] el instrumento guitarra se esta tocando correctamente
+06:59:50 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:59:50 PM: INFO [utils.py:9] el instrumento guitarra electrica se esta tocando correctamente
+06:59:50 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:59:50 PM: ERROR [class_orchestra.py:40] el instrumento piano no esta afinado
+06:59:50 PM: INFO [class_orchestra.py:52] metodo getter activado
+06:59:50 PM: ERROR [class_orchestra.py:40] El instrumento bateria mo esta afinado
+07:00:09 PM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+07:00:09 PM: INFO [class_orchestra.py:24] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+07:00:09 PM: INFO [class_orchestra.py:57] metodo setter activado
+07:00:09 PM: INFO [class_orchestra.py:71] el instrumento guitarra se ha afinado correctamente
+07:00:09 PM: INFO [class_orchestra.py:57] metodo setter activado
+07:00:09 PM: INFO [class_orchestra.py:88] el instrumento guitarra electrica se ha afinado correctamente
+07:00:09 PM: INFO [class_orchestra.py:57] metodo setter activado
+07:00:09 PM: INFO [class_orchestra.py:105] el instrumento piano se ha afinado correctamente
+07:00:09 PM: INFO [class_orchestra.py:57] metodo setter activado
+07:00:09 PM: INFO [class_orchestra.py:122] el instrumento bateria se ha afinado correctamente
+07:00:09 PM: INFO [class_orchestra.py:52] metodo getter activado
+07:00:09 PM: INFO [utils.py:9] el instrumento guitarra se esta tocando correctamente
+07:00:09 PM: INFO [class_orchestra.py:52] metodo getter activado
+07:00:09 PM: INFO [utils.py:9] el instrumento guitarra electrica se esta tocando correctamente
+07:00:09 PM: INFO [class_orchestra.py:52] metodo getter activado
+07:00:09 PM: INFO [utils.py:9] el instrumento piano se esta tocando correctamente
+07:00:09 PM: INFO [class_orchestra.py:52] metodo getter activado
