@@ -1,0 +1,10 @@
+08:39:49 AM: INFO [clases_bar.py:56] el cliente se ha ido muy feliz!
+08:39:58 AM: ERROR [bar.py:13] <class 'clases_bar.TooHotTemperatureException'>
+08:44:41 AM: ERROR [bar.py:11] el cafe esta demasiado frio
+08:45:50 AM: INFO [clases_bar.py:56] el cliente se ha ido muy feliz!
+08:45:59 AM: INFO [clases_bar.py:56] el cliente se ha ido muy feliz!
+08:46:12 AM: INFO [clases_bar.py:56] el cliente se ha ido muy feliz!
+08:48:57 AM: ERROR [bar.py:13] El cliente se ha quemado
+08:49:15 AM: ERROR [bar.py:11] el cafe esta demasiado frio
+08:49:25 AM: INFO [clases_bar.py:38] el cliente se ha ido muy feliz!
+08:49:50 AM: ERROR [bar.py:11] el cafe esta demasiado frio
