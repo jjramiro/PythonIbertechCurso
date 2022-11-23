@@ -99,3 +99,62 @@
 07:00:09 PM: INFO [class_orchestra.py:52] metodo getter activado
 07:00:09 PM: INFO [utils.py:9] el instrumento piano se esta tocando correctamente
 07:00:09 PM: INFO [class_orchestra.py:52] metodo getter activado
+08:03:17 AM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+08:03:17 AM: INFO [class_orchestra.py:24] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+08:03:17 AM: INFO [class_orchestra.py:57] metodo setter activado
+08:03:17 AM: INFO [class_orchestra.py:71] el instrumento guitarra se ha afinado correctamente
+08:03:17 AM: INFO [class_orchestra.py:57] metodo setter activado
+08:03:17 AM: INFO [class_orchestra.py:88] el instrumento guitarra electrica se ha afinado correctamente
+08:03:17 AM: INFO [class_orchestra.py:57] metodo setter activado
+08:03:17 AM: INFO [class_orchestra.py:105] el instrumento piano se ha afinado correctamente
+08:03:17 AM: INFO [class_orchestra.py:57] metodo setter activado
+08:03:17 AM: INFO [class_orchestra.py:122] el instrumento bateria se ha afinado correctamente
+08:03:17 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:03:17 AM: INFO [utils.py:9] el instrumento guitarra se esta tocando correctamente
+08:03:17 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:03:17 AM: INFO [utils.py:9] el instrumento guitarra electrica se esta tocando correctamente
+08:03:17 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:03:17 AM: INFO [utils.py:9] el instrumento piano se esta tocando correctamente
+08:03:17 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:04:21 AM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+08:04:21 AM: INFO [class_orchestra.py:24] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+08:04:21 AM: INFO [class_orchestra.py:57] metodo setter activado
+08:04:21 AM: INFO [class_orchestra.py:71] el instrumento guitarra se ha afinado correctamente
+08:04:21 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:04:21 AM: INFO [utils.py:9] el instrumento guitarra se esta tocando correctamente
+08:04:21 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:04:21 AM: ERROR [class_orchestra.py:40] el instrumento guitarra electrica no esta afinado
+08:04:21 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:04:21 AM: ERROR [class_orchestra.py:40] el instrumento piano no esta afinado
+08:04:21 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:04:21 AM: ERROR [class_orchestra.py:40] El instrumento bateria no esta afinado
+08:06:11 AM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+08:06:11 AM: INFO [class_orchestra.py:24] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+08:06:38 AM: INFO [class_orchestra.py:17] empiezan a llegar los intrumentos de la orquesta
+08:06:38 AM: INFO [class_orchestra.py:24] los instrumentos creados son: guitarra, guitarra electrica, piano y bateria
+08:06:38 AM: INFO [decorator.py:8] decorador de antes de ejecutar
+08:06:38 AM: INFO [class_orchestra.py:57] metodo setter activado
+08:06:38 AM: INFO [class_orchestra.py:71] el instrumento guitarra se ha afinado correctamente
+08:06:38 AM: INFO [decorator.py:10] decorador de despues de ejecutar
+08:06:38 AM: INFO [decorator.py:8] decorador de antes de ejecutar
+08:06:38 AM: INFO [class_orchestra.py:57] metodo setter activado
+08:06:38 AM: INFO [class_orchestra.py:88] el instrumento guitarra electrica se ha afinado correctamente
+08:06:38 AM: INFO [decorator.py:10] decorador de despues de ejecutar
+08:06:38 AM: INFO [decorator.py:8] decorador de antes de ejecutar
+08:06:38 AM: INFO [decorator.py:10] decorador de despues de ejecutar
+08:06:38 AM: INFO [decorator.py:8] decorador de antes de ejecutar
+08:06:38 AM: INFO [decorator.py:10] decorador de despues de ejecutar
+08:06:38 AM: INFO [decorator.py:8] decorador de antes de ejecutar
+08:06:38 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:06:38 AM: INFO [utils.py:9] el instrumento guitarra se esta tocando correctamente
+08:06:38 AM: INFO [decorator.py:10] decorador de despues de ejecutar
+08:06:38 AM: INFO [decorator.py:8] decorador de antes de ejecutar
+08:06:38 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:06:38 AM: INFO [utils.py:9] el instrumento guitarra electrica se esta tocando correctamente
+08:06:38 AM: INFO [decorator.py:10] decorador de despues de ejecutar
+08:06:38 AM: INFO [decorator.py:8] decorador de antes de ejecutar
+08:06:38 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:06:38 AM: ERROR [class_orchestra.py:40] el instrumento piano no esta afinado
+08:06:38 AM: INFO [decorator.py:8] decorador de antes de ejecutar
+08:06:38 AM: INFO [class_orchestra.py:52] metodo getter activado
+08:06:38 AM: ERROR [class_orchestra.py:40] El instrumento bateria no esta afinado

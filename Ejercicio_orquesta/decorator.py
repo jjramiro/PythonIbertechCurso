@@ -9,4 +9,4 @@ def orchestra_decorator(decorator_function):
         decorator_function(*args)
         log.info("decorador de despues de ejecutar")
 
-    return decorator_function
+    return decorator
