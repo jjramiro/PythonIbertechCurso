@@ -1,4 +1,10 @@
+from datetime import datetime
+from random import randint
+
+
 class Caballo:
+    distancia = 0
+
     def __init__(self, id=None, nombre=None, fecha_nacimiento=None, velocidad=None, experiencia=None,
                  valor_apuesta=None, id_granpremio=None):
         self._id = id
@@ -11,6 +17,10 @@ class Caballo:
 
     def __str__(self):
         return self.nombre
+
+    def run(self):
+        edad = int(datetime.now().year) - int(self.fecha_nacimiento.year)
+        self.distancia += self.velocidad + self.experiencia - edad + randint(1, 50)
 
     @property
     def id(self):
@@ -67,3 +77,9 @@ class Caballo:
     @id_granpremio.setter
     def id_granpremio(self, id_granpremio):
         self._id_granpremio = id_granpremio
+
+
+if __name__ == '__main__':
+    prueba = Caballo(1, "CABALLO1", "2020-02-18", 40, 60, 3, 1)
+    prueba.run()
+    print(prueba.distancia)

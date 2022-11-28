@@ -8,15 +8,16 @@ from DAO.gran_premio_DAO import GranPremioDAO
 logs.setupLogging(logging.DEBUG, "../carrera_caballos/log/caballos.log")
 
 
-def mostrar_caballos(caballos):
+def mostrar_caballos(caballos, idpremio):
     '''
     menu de caballos disponibles para apostar
     '''
     for caballo in caballos:
-        print("{}. {} - {}".format(caballo.id, caballo.nombre, caballo.valor_apuesta))
+        if caballo.id_granpremio == idpremio:
+            print("{}. {} - {}".format(caballo.id, caballo.nombre, caballo.valor_apuesta))
 
 
-def menu(caballos, apostante):
+def menu(caballos, apostante, idpremio):
     '''
     funcion para mostrar los caballos disponibles y devolver el dinero y el caballo elegido
     '''
@@ -27,12 +28,12 @@ def menu(caballos, apostante):
         if int(apuesta) > apostante.saldo:
             logs.info('el apostante {} no tiene dinero suficiente, diga otra cantidad'.format(apostante.nombre))
         else:
-            mostrar_caballos(caballos)
+            mostrar_caballos(caballos, idpremio)
             caballo = input('porque caballo desea apostar? ')
             return apuesta, caballo
 
 
-def comenzarapuestas(caballos, apostantes):
+def comenzarapuestas(caballos, apostantes, idpremio):
     '''
     funcion que devuelve el dinero de la apuesta junto con el caballo por el que se apuesta en un diccionario con el
     nombre del apostante para cada carrera
@@ -41,7 +42,7 @@ def comenzarapuestas(caballos, apostantes):
     for apostante in apostantes:
         logs.info('entra en la casa de apuestas el apostante {}'.format(apostante.nombre))
         if apostante.saldo > 0:
-            apuestafinal, caballoid = menu(caballos, apostante)
+            apuestafinal, caballoid = menu(caballos, apostante, idpremio)
             apuestas[apostante.nombre] = [apuestafinal, caballoid]
             logs.info('el apostante {} ha finalizado su apuesta'.format(apostante.nombre))
         else:
@@ -49,11 +50,49 @@ def comenzarapuestas(caballos, apostantes):
     return apuestas
 
 
-def iniciar_carrera(caballos):
+def iniciar_carrera(caballos, premio):
     '''
     funcion para iniciar el calculo de cada carrera devolviendo el caballo ganador
     '''
+    winer = caballos[0]
+    while winer.distancia < premio.distancia:
+        for caballo in caballos:
+            if caballo.id_granpremio == premio.id:
+                caballo.run()
+                if caballo.distancia > winer.distancia:
+                    winer = caballo
+                logs.info("el caballo {} va ganado".format(winer.nombre))
+    for caballo in caballos:
+        caballo.distancia = 0
+    return winer
 
+
+def cambio_saldo(winer, bets, bettors):
+    for bettor in bettors:
+        logs.info("el apostante {} comienza con un saldo de {}".format(bettor.nombre, bettor.saldo))
+        apuesta = bets[bettor.nombre]
+        if int(apuesta[1]) == int(winer.id):
+            bettor.saldo += int(apuesta[0]) * int(winer.valor_apuesta)
+        else:
+            bettor.saldo += -(int(apuesta[0]))
+        logs.info("el apostante {} termina con un saldo de {}".format(bettor.nombre, bettor.saldo))
+    return bettors
+
+
+def ganar_experiencia(horses, winer, idpremio):
+    for horse in horses:
+        if horse.id_granpremio == idpremio:
+            if horse.id == winer.id:
+                horse.experiencia += 5
+            else:
+                horse.experiencia += 1
+            CaballosDAO.actualizar(horse)
+    return horses
+
+
+def resumen_apostantes(apostantes):
+    for apostante in apostantes:
+        logs.info('el apostante {} ha acabado la carrera con un saldo de {}'.format(apostante.nombre, apostante.saldo))
 
 
 def comenzarpremios(premios, caballos, apostantes):
@@ -64,18 +103,20 @@ def comenzarpremios(premios, caballos, apostantes):
         logs.info('comienza el premio {}'.format(premio.nombre))
         carreras_hechas = 1
         while carreras_hechas <= premio.num_carreras:
-            apuestas = comenzarapuestas(caballos, apostantes)
+            apuestas = comenzarapuestas(caballos, apostantes, premio.id)
             logs.info('la carrera {} tiene las apuestas {}'.format(carreras_hechas, apuestas))
-            ganador = iniciar_carrera(caballos)
+            ganador = iniciar_carrera(caballos, premio)
+            apostantes = cambio_saldo(ganador, apuestas, apostantes)
+            caballos = ganar_experiencia(caballos, ganador, premio.id)
+            resumen_apostantes(apostantes)
             carreras_hechas += 1
 
 
 if __name__ == '__main__':
     logs.info('comenzamos la casa de apuestas')
-    # TODO: antes de subir a github descomentar lo de abajo
-    '''insertgranpremio()
+    insertgranpremio()
     insertcaballo()
-    insertapostante()'''
+    insertapostante()
     premios = GranPremioDAO.seleccionar()
     caballos = CaballosDAO.seleccionar()
     apostantes = ApostanteDAO.seleccionar()

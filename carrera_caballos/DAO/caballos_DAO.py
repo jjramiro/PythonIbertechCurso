@@ -14,6 +14,7 @@ class CaballosDAO:
     _SELECCIONAR = 'SELECT * FROM caballos ORDER BY id'
     _INSERTAR = 'INSERT INTO caballos(nombre, fecha_nacimiento, velocidad, experiencia, valor_apuesta,' \
                 'id_granpremio) VALUES(%s, %s, %s, %s, %s, %s)'
+    _ACTUALIZAR = 'UPDATE caballos SET experiencia=%s WHERE id=%s'
 
     @classmethod
     def seleccionar(cls):
@@ -38,4 +39,16 @@ class CaballosDAO:
                 cursor.execute(cls._INSERTAR, valores)
                 conexion.commit()
                 logs.info(f'productos insertada: {caballo}')
+                return cursor.rowcount
+
+    @classmethod
+    def actualizar(cls, horse):
+        if horse.experiencia >= 100:
+            horse.experiencia = 100
+        with get_mysql_conection() as conexion:
+            with conexion.cursor() as cursor:
+                valor = (horse.experiencia, horse.id)
+                cursor.execute(cls._ACTUALIZAR, valor)
+                conexion.commit()
+                logs.debug(f'productos actualizada: {horse}')
                 return cursor.rowcount
